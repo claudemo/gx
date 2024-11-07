@@ -25,5 +25,11 @@
             "src": "/(.*)",
             "dest": "/emotional-support-app/build/$1"
         }
+    ],
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
     ]
 }
