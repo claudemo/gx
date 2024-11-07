@@ -1,0 +1,29 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "flask/api/wsgi.py",
+            "use": "@vercel/python",
+            "config": {
+                "maxLambdaSize": "50mb"
+            }
+        },
+        {
+            "src": "emotional-support-app/package.json",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "emotional-support-app/build"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "/flask/api/wsgi.py"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/emotional-support-app/$1"
+        }
+    ]
+}
