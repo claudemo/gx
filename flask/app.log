@@ -1519,3 +1519,9 @@ What brings you to my world? Are you seeking wisdom, adventure, or perhaps a gli
 2024-11-07 14:13:08,798 DEBUG fsevents Thread-3 : queue_event FileModifiedEvent(src_path='/Users/mengyue/Desktop/pg/gx/flask/test.md', dest_path='', event_type='modified', is_directory=False, is_synthetic=False)
 2024-11-07 14:13:08,964 DEBUG fsevents Thread-3 : NativeEvent(path="/Users/mengyue/Desktop/pg/gx/flask/test.md", inode=111814589, flags=11400, id=542432838): is_file, is_inode_meta_mod, is_modified
 2024-11-07 14:13:08,964 DEBUG fsevents Thread-3 : queue_event FileModifiedEvent(src_path='/Users/mengyue/Desktop/pg/gx/flask/test.md', dest_path='', event_type='modified', is_directory=False, is_synthetic=False)
+2024-11-07 15:02:50,815 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-07 15:02:50,816 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-11-07 15:02:50,824 INFO werkzeug MainThread :  * Restarting with watchdog (fsevents)
+2024-11-07 15:02:51,206 WARNING werkzeug MainThread :  * Debugger is active!
+2024-11-07 15:02:51,218 INFO werkzeug MainThread :  * Debugger PIN: 425-760-821

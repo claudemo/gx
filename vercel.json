@@ -12,7 +12,7 @@
             "src": "emotional-support-app/package.json",
             "use": "@vercel/static-build",
             "config": {
-                "distDir": "emotional-support-app/build"
+                "distDir": "build"
             }
         }
     ],
@@ -23,7 +23,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "/emotional-support-app/$1"
+            "dest": "/emotional-support-app/build/$1"
         }
     ]
 }
