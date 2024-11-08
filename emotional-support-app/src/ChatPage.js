@@ -80,7 +80,6 @@ function ChatPage({ addDiaryEntry }) { // Destructure addDiaryEntry from props
 
     return (
         <div className="chat-container">
-
             <div className="chat-box">
                 {messages.map((msg, index) => (
                     <div key={index} className={`message ${msg.sender}`}>

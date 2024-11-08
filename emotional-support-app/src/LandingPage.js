@@ -33,8 +33,8 @@ function LandingPage({ addDiaryEntry }) {
 
     return (
         <div className="landing-container">
-            <h1>Hello, Chat Your Thoughts with the Magic Mirror~</h1>
-            <p>The mission of the Magic Mirror is: to listen to your present, illuminate your future</p>
+            <h1>Chat Your Thoughts with the Magic Mirror</h1>
+            {/* <p>The mission of the Magic Mirror is: to listen to your present, illuminate your future</p> */}
 
             <div className="button-container">
                 {predefinedCategories.map((category, index) => (

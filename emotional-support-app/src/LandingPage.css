@@ -1,10 +1,9 @@
 /* src/components/LandingPage.css */
 
 .landing-container {
-
     text-align: center;
     padding: 50px 20px;
-    background-color: rgba(156, 212, 231, 0.5);
+    /* background-color: rgba(156, 212, 231, 0.5); */
     /* Light blue semi-transparent background */
     backdrop-filter: blur(5px);
     /* Apply blur */
@@ -19,14 +18,17 @@
 .landing-container h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    margin-bottom: 20px;
     color: #333;
+    padding: 10px;
+    /* Added padding */
 }
 
 .landing-container p {
-    font-size: 1.2rem;
+    font-size: 3rem;
     margin-bottom: 40px;
     color: #555;
+    padding: 20px;
+    /* Added padding */
 }
 
 .button-container {
@@ -34,13 +36,18 @@
     flex-direction: column;
     gap: 15px;
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 100;
     /* Increased gap for better spacing */
+    margin-top: 40px;
     margin-bottom: 40px;
+    margin: 30px;
+    padding: 15px;
+    /* Added padding */
 }
 
+/* bubble */
 .concern-button {
-    background-color: #60acdb;
+    background-color: #5cb1e6;
     /* Light Sky Blue */
     color: #fff;
     border: none;
@@ -50,7 +57,9 @@
     /* More rounded corners */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    padding: 20px;
+    /* Added padding */
 }
 
 .concern-button:hover {
@@ -64,6 +73,8 @@
     display: flex;
     gap: 10px;
     justify-content: center;
+    padding: 10px;
+    /* Added padding */
 }
 
 .input-field {
@@ -74,4 +85,6 @@
     /* Increased border-radius */
     background-color: rgba(255, 255, 255, 0.8);
     /* Slightly opaque input background */
+    padding: 10px;
+    /* Added padding */
 }

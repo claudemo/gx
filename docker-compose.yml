@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./emotional-support-app
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ./flask
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - FLASK_APP=app.py
+      - GROQ_API_KEY=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
+      # Add other environment variables as needed
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

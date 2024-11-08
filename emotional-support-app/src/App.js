@@ -11,8 +11,8 @@ function App() {
   const [diaryEntries, setDiaryEntries] = useState(() => {
     const savedEntries = localStorage.getItem('diaryEntries');
     return savedEntries ? JSON.parse(savedEntries) : [
-      { id: 1, category: 'Trouble in Love', text: 'Recently had some conflicts with my partner, feeling very confused.', timestamp: '2024-11-07' },
-      { id: 2, category: 'Academic Pressure', text: 'The course load is really heavy, especially the final exams.', timestamp: '2024-11-06' },
+      { id: 1, category: 'Trouble in Love', text: 'Confused about human relationships.', timestamp: '2024-11-05' },
+      { id: 2, category: 'Academic Pressure', text: 'The course load is really heavy', timestamp: '2024-11-06' },
     ];
   });
 
