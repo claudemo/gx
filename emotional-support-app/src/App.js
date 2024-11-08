@@ -1,24 +1,51 @@
 // src/App.js
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
-import ChatPage from './components/ChatPage'; // Import ChatPage
-import DiaryPage from './components/DiaryPage';
-import LandingPage from './components/LandingPage';
+import ChatPage from './ChatPage';
+import DiaryPage from './DiaryPage';
+import LandingPage from './LandingPage';
+import MoodHomePage from './MoodHomePage';
 
 function App() {
+  const [diaryEntries, setDiaryEntries] = useState(() => {
+    const savedEntries = localStorage.getItem('diaryEntries');
+    return savedEntries ? JSON.parse(savedEntries) : [
+      { id: 1, category: 'Trouble in Love', text: 'Recently had some conflicts with my partner, feeling very confused.', timestamp: '2024-11-07' },
+      { id: 2, category: 'Academic Pressure', text: 'The course load is really heavy, especially the final exams.', timestamp: '2024-11-06' },
+    ];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('diaryEntries', JSON.stringify(diaryEntries));
+  }, [diaryEntries]);
+
+  const addDiaryEntry = (category, text) => {
+    const today = new Date().toISOString().split('T')[0];
+    setDiaryEntries([
+      ...diaryEntries,
+      {
+        id: diaryEntries.length + 1,
+        category,
+        text,
+        timestamp: today,
+      },
+    ]);
+  };
+
   return (
     <Router>
       <div className="app-container">
         <nav className="navbar">
-          <Link to="/" className="nav-link">主页</Link>
-          <Link to="/diary" className="nav-link">日记</Link>
-          <Link to="/chat" className="nav-link">AI 聊天</Link> {/* Add Chat Link */}
+          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/diary" className="nav-link">Diary</Link>
+          {/* <Link to="/chat" className="nav-link">AI Chat</Link> */}
         </nav>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/diary" element={<DiaryPage />} />
-          <Route path="/chat" element={<ChatPage />} /> {/* Add Chat Route */}
+          <Route path="/" element={<MoodHomePage />} /> {/* Set MoodHomePage as Home */}
+          <Route path="/landing" element={<LandingPage addDiaryEntry={addDiaryEntry} />} />
+          <Route path="/diary" element={<DiaryPage diaryEntries={diaryEntries} />} />
+          <Route path="/chat" element={<ChatPage addDiaryEntry={addDiaryEntry} />} />
         </Routes>
       </div>
     </Router>

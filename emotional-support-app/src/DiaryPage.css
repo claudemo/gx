@@ -1,0 +1,96 @@
+/* src/components/DiaryPage.css */
+
+.diary-container {
+    background-color: rgba(173, 216, 230, 0.5);
+    /* Light blue semi-transparent background */
+    backdrop-filter: blur(5px);
+    /* Apply blur */
+    padding: 20px;
+    border-radius: 20px;
+    /* More rounded corners */
+    max-width: 800px;
+    margin: 40px auto;
+    /* Increased margin for better spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.diary-container h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.diary-container p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.add-entry {
+    display: flex;
+    gap: 15px;
+    /* Increased gap for better spacing */
+    margin-bottom: 20px;
+}
+
+.input-field {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    /* Increased border-radius */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Slightly opaque input background */
+}
+
+.add-button {
+    padding: 10px 20px;
+    background-color: #87CEFA;
+    /* Light Sky Blue */
+    border: none;
+    border-radius: 15px;
+    /* More rounded corners */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1rem;
+}
+
+.add-button:hover {
+    background-color: #00BFFF;
+    /* Deep Sky Blue on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+.diary-entries {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Increased gap for better spacing */
+}
+
+.diary-entry {
+    background-color: rgba(135, 206, 250, 0.8);
+    /* Light Sky Blue with 80% opacity */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    /* More rounded corners */
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.diary-entry h3 {
+    margin: 0 0 5px 0;
+    color: #007bff;
+    /* Blue accent for category titles */
+}
+
+.diary-entry p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.timestamp {
+    font-size: 0.8em;
+    color: #999;
+    text-align: right;
+}
