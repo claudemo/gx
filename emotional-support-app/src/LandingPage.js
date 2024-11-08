@@ -33,7 +33,7 @@ function LandingPage({ addDiaryEntry }) {
 
     return (
         <div className="landing-container">
-            <h1>Chat Your Thoughts with the Magic Mirror</h1>
+            <h1>Drop your stones to the pond</h1>
             {/* <p>The mission of the Magic Mirror is: to listen to your present, illuminate your future</p> */}
 
             <div className="button-container">
@@ -56,8 +56,10 @@ function LandingPage({ addDiaryEntry }) {
                     onChange={(e) => setUserInput(e.target.value)}
                     className="input-field"
                 />
-                <button type="submit" className="submit-button">Add Diary Entry</button>
+                <button type="submit" className="submit-button">Add Diary</button>
+
             </form>
+
         </div>
     );
 }

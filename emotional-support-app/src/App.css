@@ -33,12 +33,18 @@
 .navbar {
     /* background-color: rgba(173, 216, 230, 0.8); */
     /* Light blue semi-transparent background */
-    padding: 10px 20px;
+    padding: 20px 40px;
+    font-size: 1.2rem;
     display: flex;
+
     gap: 15px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
     border-radius: 15px;
+    font-family: 'Merriweather', serif;
+    /* Change to your desired font family */
     /* Increased border-radius for roundness */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Added shadow */
 }
 
 .nav-link {

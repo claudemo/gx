@@ -1,0 +1,28 @@
+# flyctl launch added from .gitignore
+**/.vercel
+
+# flyctl launch added from emotional-support-app/.gitignore
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+emotional-support-app/node_modules
+emotional-support-app/.pnp
+emotional-support-app/**/.pnp.js
+
+# testing
+emotional-support-app/coverage
+
+# production
+emotional-support-app/build
+
+# misc
+emotional-support-app/**/.DS_Store
+emotional-support-app/**/.env.local
+emotional-support-app/**/.env.development.local
+emotional-support-app/**/.env.test.local
+emotional-support-app/**/.env.production.local
+
+emotional-support-app/**/npm-debug.log*
+emotional-support-app/**/yarn-debug.log*
+emotional-support-app/**/yarn-error.log*
+fly.toml

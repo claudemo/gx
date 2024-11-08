@@ -54,14 +54,20 @@
 .message {
     margin-bottom: 15px;
     display: flex;
+    font-family: 'Merriweather', serif;
+    color: black;
 }
 
 .message.ai {
     justify-content: flex-start;
+    font-family: 'Merriweather', serif;
+    color: rgb(60, 59, 59);
 }
 
 .message.user {
     justify-content: flex-end;
+    font-family: 'Merriweather', serif;
+    color: rgb(60, 59, 59);
 }
 
 .message-text {
@@ -70,14 +76,17 @@
     border-radius: 15px;
     /* More rounded corners */
     background-color: #acc8dc;
+
     /* Light Sky Blue */
-    color: #686666;
+    font-family: 'Merriweather', serif;
+
 }
 
 .message.user .message-text {
     background-color: #83bcce;
     /* Deep Sky Blue for user messages */
-    color: #fff;
+    font-family: 'Merriweather', serif;
+
 }
 
 .input-container {
@@ -101,6 +110,9 @@
     border: none;
     border-radius: 15px;
     /* More rounded corners */
+    font-family: 'Merriweather', serif;
+    /* Change to your desired font family */
+
     background-color: #2e6dc0;
     /* Light Green */
     color: #fff;
