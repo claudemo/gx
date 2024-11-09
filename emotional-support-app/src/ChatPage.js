@@ -48,8 +48,8 @@ function ChatPage({ addDiaryEntry }) { // Destructure addDiaryEntry from props
 
         try {
             const response = await axios.post(
-                'http://ec2-3-22-95-161.us-east-2.compute.amazonaws.com:5000/api/chat',
-                // 'http://localhost:5000/api/chat',
+                // 'http://ec2-3-22-95-161.us-east-2.compute.amazonaws.com:5000/api/chat',
+                'http://localhost:5000/api/chat',
 
                 { message: messageText },
                 { headers: { 'Content-Type': 'application/json' } } // Set header

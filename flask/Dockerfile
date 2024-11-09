@@ -19,5 +19,6 @@ COPY . .
 # Expose port 5000
 EXPOSE 5000
 
+
 # Command to run the application with Gunicorn
 CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:5000", "--workers", "4"]
