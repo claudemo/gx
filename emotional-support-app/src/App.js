@@ -38,7 +38,7 @@ function App() {
       <div className="app-container">
         <nav className="navbar">
           <Link to="/" className="nav-link">Home</Link>
-          <Link to="/diary" className="nav-link">Diary</Link>
+          <Link to="/diary" className="nav-link">Journal</Link>
           {/* <Link to="/chat" className="nav-link">AI Chat</Link> */}
         </nav>
         <Routes>
